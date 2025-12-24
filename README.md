@@ -3,20 +3,28 @@
 Interactive Dashboard Creation: Designed a user-friendly Power BI dashboard to visualize key business metrics like total revenue, profit, and sales volume in one place.
 
 
-1) Year-over-Year (YoY) Growth Tracking: Implemented YoY analysis to compare this year’s performance against the same period last year, making it easy to see if the business is growing or shrinking.
+1) Project Objective: The primary goal of this project was to analyze the sales and profitability of a "SuperStore" to identify key performance drivers, regional trends, and product category performance to help stakeholders make data-driven decisions.
 
-2) Automated Data Cleaning: Used Power Query to clean and organize the raw data, ensuring all reports are based on accurate and consistent information.
+2) Data Sourcing: The raw dataset was sourced via a YouTube educational resource, providing a comprehensive record of retail transactions including order details, customer segments, and geographic information across the United States.
 
-3) Advanced DAX Measures: Created custom calculations (measures) to determine complex figures like profit margins and rolling averages.
+3) Data Cleaning & Pre-processing (Excel): Initial data refining was performed in Microsoft Excel. This involved removing redundant columns (like ind1 and ind2), handling missing values in the Returns field, and ensuring date formats (Order Date, Ship Date) were consistent for time-series analysis.
 
-4) Sales Trend Analysis: Built line charts that show sales trends over months and years, helping to identify seasonal peaks and slow periods.
+4) Data Integration: The cleaned dataset was imported into Power BI, where I used the Power Query Editor to verify data types and perform final transformations, ensuring the "Sales" and "Profit" columns were correctly formatted as currency.
 
-5) Regional Performance Insights: Included a geographic breakdown to show which regions or cities are contributing the most to total sales.
+5) Data Modeling: I established a robust data model within Power BI. While the dataset was largely a flat table, I ensured all relationships and hierarchies (e.g., Region > State > City) were properly defined to enable "drill-down" capabilities in the report.
 
-6) Product Category Breakdown: Developed visualizations to identify top-selling products and categories, allowing for better inventory management.
+6) DAX Measures & KPIs: Developed custom measures using DAX (Data Analysis Expressions) to calculate critical business metrics, including Total Sales, Total Profit, Total Quantity Sold, and Profit Margin %.
 
-7) Dynamic Filtering (Slicers): Added interactive filters so users can view data for specific time periods, regions, or product types with a single click.
+7) Interactive Visualizations: Designed a dynamic dashboard featuring:
+   
+  .Time-Series Analysis: Line charts to track sales and profit trends over years and months.
+  .Geographic Mapping: A map visual to identify high-performing states and regions.
+  .Product Performance: Bar charts showing the most and least profitable categories (e.g., Technology, Furniture, Office Supplies).
 
-8) Profitability Analysis: Analyzed the relationship between sales volume and net profit to identify high-margin opportunities.
+8) User Interactivity: Incorporated Slicers and Filters (Category, Region, Year, and Payment Mode) to allow users to customize their view and deep-dive into specific segments of the business.
 
-9) Data Modeling: Established a "Star Schema" data model to connect different data tables (like Sales, Products, and Calendar) for fast and efficient reporting.
+9) Key Business Insights: The dashboard revealed significant findings, such as which Payment Modes (COD vs. Online) are preferred by customers and which Sub-Categories (like Binders or Phones) contribute the most to the bottom line.
+
+10) Tools Used:
+Excel: For initial data cleaning and structural audit.
+Power BI: For data modeling, DAX development, and creating the final interactive dashboard.
